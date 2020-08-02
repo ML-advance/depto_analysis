@@ -3,10 +3,25 @@
 TDdescription:
 
 # Requirements
-asdas
+* Python 3.6.5
 
 # Installation
-adssa
+    ppython -m venv venv
+    source venv/bin/activate
+    pip install --upgrade pip
+    
+# scrapy
+Example quotes
+
+New spider in scrapping/spiders
+
+    scrapy genspider quotes quotes.com
+
+Run a spider
+
+    # save file into data in json lines format
+    scrapy crawl quotes
+
 
 # Project tree
 
@@ -14,6 +29,7 @@ adssa
     |-- requirements.txt
     |-- research
        |-- jupyter
+    |-- data -> json lines format
     |-- src
         |-- machine_learning
             |-- data_ingestion -> create dataset from scrapping parent classs
@@ -23,9 +39,8 @@ adssa
             |-- modeling -> 
             |-- Evaluate
             |-- Pipeline -> model in prd, use preprocessing and trained model
-        |-- scrapping -> source
-            |-- portalinmobiliario
-            |-- src -> transform parent class 
+    |-- scrapping -> scrapy data
+        |-- spiders -> download data from urls and save in data folder
     |-- tests
         |-- src
             |-- machine_learning
@@ -35,4 +50,3 @@ adssa
 # import from new source
    
     sys.path.append(<folder_path>)
-
