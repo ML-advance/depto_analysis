@@ -43,4 +43,3 @@ if __name__ == "__main__":
 
     process.crawl(QuotesSpider)
     process.start()  # the script will block here until the crawling is finished
-    print()

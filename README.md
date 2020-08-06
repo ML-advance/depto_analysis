@@ -6,9 +6,10 @@ TDdescription:
 * Python 3.6.5
 
 # Installation
-    ppython -m venv venv
+    python -m venv venv
     source venv/bin/activate
     pip install --upgrade pip
+    pip install -r requirements.txt
     
 # scrapy
 Example quotes
